@@ -1,0 +1,27 @@
+<!doctype>
+<html>
+    <head>
+        <title>Test layout</title>
+        <link href="/css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="logo">
+                    <!-- 
+                    navigatie gaan genereren
+                    we kunnen $this gebruiken omdat we onze navigatie in registry staken
+                    anders $this->getinstance...
+                    -->
+                    <img src="/images/logo.png" alt="logo" width="200"/>
+                </div>
+                <nav>
+                    <?php echo $this->navigation()->menu(); ?>
+                </nav>
+            </header>
+            <section id="content">
+            <?php echo $this->layout()->content; ?>
+            </section>
+        </div>
+    </body>
+</html>

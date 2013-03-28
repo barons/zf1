@@ -1,0 +1,10 @@
+<h1>Nieuws overzicht</h1>
+
+<ul>
+    <li><a href="/news/toevoegen">Toevoegen</a></li>
+</ul>
+
+<?php foreach ($this->news as $nieuws){
+    echo "<p>".$nieuws['titel']."<a href='wijzigen/id/".$nieuws['id']."'>Wijzig</a></p>";
+    echo '<hr/>';
+}

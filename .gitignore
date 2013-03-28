@@ -1,0 +1,5 @@
+.DS_Store
+htdocs/libraries
+.vagrant
+.zfproject.xml
+
